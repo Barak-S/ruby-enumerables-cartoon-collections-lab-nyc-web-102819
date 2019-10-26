@@ -7,14 +7,15 @@ def roll_call_dwarves(dwarfs)# code an argument here
 end
 
 def summon_captain_planet(array_calls)
-  array_calls.collect do |call| 
+  #array_calls = ["earth", "wind", "fire", "water", "heart"]
+  array_calls.map do |call| 
   call.capitalize + "!"
   end
 
 end
 
-def long_planeteer_calls(long_planteer_calls)# code an argument here
-  # Your code here
+def long_planeteer_calls(long_planteer_calls)
+  #
   answer = false
   long_planteer_calls.each do |call|
     if call.length > 4
